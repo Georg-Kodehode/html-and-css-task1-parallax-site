@@ -1,0 +1,78 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Raleway", "sans-serif";
+    line-height: 1.7em;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('images/galaxy.jpg');
+    background-position: right;
+    background-size: unset;
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('images/astronaut.jpg');
+    background-position: top;
+    min-height: 600px;
+}
+
+.pimg3{
+    background-image: url('images/mars_rover.jpg');
+    min-height: 600px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #fff;
+    color: #444;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.light-background{
+    background-color: #fff;
+    color: #111;
+    padding: 10px;
+}
+
+@media(max-width: 568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
